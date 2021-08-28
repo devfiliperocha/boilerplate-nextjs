@@ -1,10 +1,53 @@
 # Boilerplate Next Js
 
-Projeto de Web App com TypeScript, ReactJS, NextJS e Styled Components, com todas as configurações iniciais, feito no curso NextJs na prática.
+Projeto de Web App com TypeScript, ReactJS, NextJS e Styled Components, com todas as configurações iniciais, feito no curso React Avançado.
 Obs.: Além do que é dito no curso, adicionei dois módulos para Conventional Commits (`commitzen`, `commitlint`), e um para Semantic Versioning (`standard-version`), ambos configurados em conjunto com git hooks.
 
 Anotações e explicações sobre a instalação e configuração:
 
+## Tecnologias
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Storybook](https://storybook.js.org/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://github.com/typicode/husky)
+
+
+### Instalar Dependências
+
+```bash
+npm install
+# or
+yarn
+```
+
+### Rodar Projeto
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+O dev server rodará em [http://localhost:3000](http://localhost:3000)
+
+## Comandos
+
+- `dev`: Roda dev server `localhost:3000`
+- `build`: Cria build para produção
+- `start`: Roda a build criada local
+- `lint`: Roda o lint nos componentes e páginas
+- `test`: Roda as suites de teste
+- `test:watch`: Roda os teste em watch mode
+- `storybook`: Roda o storybook em `localhost:6006`
+- `build-storybook`: Cria build do storybook
+
+
+## Explanação sobre processos executados para criação do Boilerplate
 # Next
 
 Instalação do Next Js
@@ -359,8 +402,8 @@ module.exports = withPWA({
 - Criar arquivo `manifest.json` na pasta `public`, com o seguinte conteúdo:
 ````json
 {
-  "name": "NextJS Na prática - Boilerplate",
-  "short_name": "NextJS Na prática",
+  "name": "Phantom - Boilerplate",
+  "short_name": "Phantom",
   "icons": [
     {
       "src": "/img/icon-192.png",
