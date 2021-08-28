@@ -399,6 +399,7 @@ module.exports = withPWA({
 <link rel="manifest" href="/manifest.json" />
 <meta name="theme-color" content="#06092B" />
 ````
+# Adição pessoal
 
 ## Conventional Commits
 
