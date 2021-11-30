@@ -1,5 +1,14 @@
 import React from 'react';
-import GlobalStyles from '../src/styles/global'
+import CssBaseline from "@material-ui/core/CssBaseline"
+import { ThemeProvider as EmotionThemeProvider } from "emotion-theming"
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import MaterialThemeProvider from '@material-ui/core/styles/ThemeProvider'
+import { createTheme } from '@material-ui/core/styles'
+
+import GlobalStyles from 'styles/global'
+import theme from 'styles/theme'
+
+const materialTheme = createTheme(theme)
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,11 +20,19 @@ export const parameters = {
   },
 }
 
-export const decorators = [
-  (Story) => (
-    <>
-      <GlobalStyles/>
-      <Story />
-    </>
-  ),
-];
+const withThemeProvider = (Story, context) => {
+  return (
+    <EmotionThemeProvider theme={materialTheme}>
+      <MaterialThemeProvider theme={materialTheme}>
+        <CssBaseline />
+        <StyledThemeProvider theme={theme}>
+          <GlobalStyles/>
+          <Story {...context} />
+        </StyledThemeProvider>
+      </MaterialThemeProvider>
+    </EmotionThemeProvider>
+  )
+}
+
+export const decorators = [withThemeProvider]
+

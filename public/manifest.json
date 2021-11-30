@@ -1,6 +1,6 @@
 {
-  "name": "Phantom - Boilerplate",
-  "short_name": "Phantom",
+  "name": "Boilerplate",
+  "short_name": "Boilerplate",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -25,9 +25,9 @@
       "purpose": "any maskable"
     }
   ],
-  "background_color": "#06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS, e Styled Components",
+  "background_color": "#1b2936",
+  "description": "Boilerplate utilizando Typescript, React, NextJS, Material-ui e Styled Components",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#1b2936"
 }

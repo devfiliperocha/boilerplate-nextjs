@@ -10,6 +10,7 @@ Anotações e explicações sobre a instalação e configuração:
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
 - [Styled Components](https://styled-components.com/)
+- [React Material Ui](https://mui.com/pt/)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - [Storybook](https://storybook.js.org/)
@@ -402,8 +403,8 @@ module.exports = withPWA({
 - Criar arquivo `manifest.json` na pasta `public`, com o seguinte conteúdo:
 ````json
 {
-  "name": "Phantom - Boilerplate",
-  "short_name": "Phantom",
+  "name": "Boilerplate",
+  "short_name": "Boilerplate",
   "icons": [
     {
       "src": "/img/icon-192.png",
